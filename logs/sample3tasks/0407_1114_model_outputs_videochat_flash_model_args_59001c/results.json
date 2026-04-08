@@ -1,0 +1,179 @@
+{
+    "results": {
+        "mvbench_action_sequence": {
+            "mvbench_accuracy,none": 24.0,
+            "mvbench_accuracy_stderr,none": "N/A",
+            "alias": "mvbench_action_sequence"
+        },
+        "mvbench_object_existence": {
+            "mvbench_accuracy,none": 58.0,
+            "mvbench_accuracy_stderr,none": "N/A",
+            "alias": "mvbench_object_existence"
+        },
+        "mvbench_scene_transition": {
+            "mvbench_accuracy,none": 92.0,
+            "mvbench_accuracy_stderr,none": "N/A",
+            "alias": "mvbench_scene_transition"
+        }
+    },
+    "configs": {
+        "mvbench_action_sequence": {
+            "task": "mvbench_action_sequence",
+            "dataset_path": "./mvbench_video",
+            "dataset_name": "action_sequence",
+            "dataset_kwargs": {
+                "token": true
+            },
+            "test_split": "train",
+            "full_docs": false,
+            "process_results_use_image": false,
+            "doc_to_visual": "<function mvbench_doc_to_visual at 0x7f16f3fb97e0>",
+            "doc_to_text": "<function mvbench_doc_to_text at 0x7f16f3fb9fc0>",
+            "doc_to_target": "answer",
+            "process_results": "<function mvbench_process_results at 0x7f16f3fba7a0>",
+            "description": "",
+            "target_delimiter": " ",
+            "fewshot_delimiter": "\n\n",
+            "metric_list": [
+                {
+                    "metric": "mvbench_accuracy",
+                    "aggregation": "<function mvbench_aggregate_results at 0x7f16f3fbaef0>",
+                    "higher_is_better": true
+                }
+            ],
+            "output_type": "generate_until",
+            "generation_kwargs": {
+                "max_new_tokens": 16,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "num_beams": 1,
+                "do_sample": false,
+                "until": [
+                    "\n\n"
+                ]
+            },
+            "repeats": 1,
+            "should_decontaminate": false,
+            "lmms_eval_specific_kwargs": {
+                "default": {
+                    "sub_task": "action_sequence",
+                    "post_prompt": "\nOnly give the best option."
+                },
+                "sub_task": "action_sequence",
+                "post_prompt": "\nOnly give the best option."
+            }
+        },
+        "mvbench_object_existence": {
+            "task": "mvbench_object_existence",
+            "dataset_path": "./mvbench_video",
+            "dataset_name": "object_existence",
+            "dataset_kwargs": {
+                "token": true
+            },
+            "test_split": "train",
+            "full_docs": false,
+            "process_results_use_image": false,
+            "doc_to_visual": "<function mvbench_doc_to_visual at 0x7f16f3b42f80>",
+            "doc_to_text": "<function mvbench_doc_to_text at 0x7f16f3b43760>",
+            "doc_to_target": "answer",
+            "process_results": "<function mvbench_process_results at 0x7f16f3b43f40>",
+            "description": "",
+            "target_delimiter": " ",
+            "fewshot_delimiter": "\n\n",
+            "metric_list": [
+                {
+                    "metric": "mvbench_accuracy",
+                    "aggregation": "<function mvbench_aggregate_results at 0x7f16f3b58700>",
+                    "higher_is_better": true
+                }
+            ],
+            "output_type": "generate_until",
+            "generation_kwargs": {
+                "max_new_tokens": 16,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "num_beams": 1,
+                "do_sample": false,
+                "until": [
+                    "\n\n"
+                ]
+            },
+            "repeats": 1,
+            "should_decontaminate": false,
+            "lmms_eval_specific_kwargs": {
+                "default": {
+                    "sub_task": "object_existence",
+                    "post_prompt": "\nOnly give the best option."
+                },
+                "sub_task": "object_existence",
+                "post_prompt": "\nOnly give the best option."
+            }
+        },
+        "mvbench_scene_transition": {
+            "task": "mvbench_scene_transition",
+            "dataset_path": "./mvbench_video",
+            "dataset_name": "scene_transition",
+            "dataset_kwargs": {
+                "token": true
+            },
+            "test_split": "train",
+            "full_docs": false,
+            "process_results_use_image": false,
+            "doc_to_visual": "<function mvbench_doc_to_visual at 0x7f16f3b80160>",
+            "doc_to_text": "<function mvbench_doc_to_text at 0x7f16f3b80940>",
+            "doc_to_target": "answer",
+            "process_results": "<function mvbench_process_results at 0x7f16f3b81120>",
+            "description": "",
+            "target_delimiter": " ",
+            "fewshot_delimiter": "\n\n",
+            "metric_list": [
+                {
+                    "metric": "mvbench_accuracy",
+                    "aggregation": "<function mvbench_aggregate_results at 0x7f16f3b81870>",
+                    "higher_is_better": true
+                }
+            ],
+            "output_type": "generate_until",
+            "generation_kwargs": {
+                "max_new_tokens": 16,
+                "temperature": 0.0,
+                "top_p": 1.0,
+                "num_beams": 1,
+                "do_sample": false,
+                "until": [
+                    "\n\n"
+                ]
+            },
+            "repeats": 1,
+            "should_decontaminate": false,
+            "lmms_eval_specific_kwargs": {
+                "default": {
+                    "sub_task": "scene_transition",
+                    "post_prompt": "\nOnly give the best option."
+                },
+                "sub_task": "scene_transition",
+                "post_prompt": "\nOnly give the best option."
+            }
+        }
+    },
+    "versions": {
+        "mvbench_action_sequence": "Yaml",
+        "mvbench_object_existence": "Yaml",
+        "mvbench_scene_transition": "Yaml"
+    },
+    "n-shot": {
+        "mvbench_action_sequence": 0,
+        "mvbench_object_existence": 0,
+        "mvbench_scene_transition": 0
+    },
+    "model_configs": {
+        "model": "videochat_flash",
+        "model_args": "pretrained=./checkpoints/stage2-kf_guided-init,max_num_frames=16",
+        "batch_size": "1",
+        "device": null,
+        "limit": 50.0,
+        "bootstrap_iters": 100000,
+        "gen_kwargs": ""
+    },
+    "git_hash": null
+}

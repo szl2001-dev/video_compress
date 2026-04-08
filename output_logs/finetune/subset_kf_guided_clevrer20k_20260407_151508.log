@@ -1,0 +1,149 @@
+Failed to import llava_qwen from llava.language_model.llava_qwen. Error: No module named 'llava.model.language_model.llava_qwen'
+[15:15:18.977499] Rank 0 | Local Rank 0 | World Size 1 | Local World Size 1 |
+10-249-32-141-cls-2jtp4whc:64390:64390 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond0
+10-249-32-141-cls-2jtp4whc:64390:64390 [0] NCCL INFO Bootstrap: Using bond0:10.249.32.141<0>
+10-249-32-141-cls-2jtp4whc:64390:64390 [0] NCCL INFO cudaDriverVersion 12040
+10-249-32-141-cls-2jtp4whc:64390:64390 [0] NCCL INFO NCCL version 2.27.5+cuda12.9
+10-249-32-141-cls-2jtp4whc:64390:64390 [0] NCCL INFO Comm config Blocking set to 1
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO NET/Plugin: Plugin name set by env to libnccl-net.so
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v10 symbol.
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v9 symbol.
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO NET/Plugin: Loaded net plugin NCCL RDMA Plugin v8 (v8)
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v10 symbol.
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v9 symbol.
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO NET/Plugin: Loaded collnet plugin SHARP (v8)
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Successfully loaded external plugin libnccl-net.so
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO P2P plugin IBext_v8
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/RoCE [1]mlx5_1:1/RoCE [2]mlx5_4:1/RoCE [3]mlx5_5:1/RoCE [RO]; OOB bond0:10.249.32.141<0>
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Initialized NET plugin NCCL RDMA Plugin v8
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Assigned NET plugin NCCL RDMA Plugin v8 to comm
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Using network NCCL RDMA Plugin v8
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO ncclCommInitRankConfig comm 0xd191500 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId bb000 commId 0xf5bee1c166b6b530 - Init START
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO NCCL_HOSTID set by environment to 10.249.32.141
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Bootstrap timings total 0.116094 (create 0.000029, send 0.000183, recv 0.000220, ring 0.000001, delay 0.000007)
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO MNNVL busId 0xbb000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Setting affinity for GPU 0 to 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85,87,89,91,93,95,97,99,101,103,105,107,109,111,113,115,117,119,121,123,125,127,129,131,133,135,137,139,141,143,145,147,149,151,153,15
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO comm 0xd191500 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 00/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 01/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 02/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 03/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 04/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 05/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 06/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 07/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 08/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 09/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 10/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 11/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 12/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 13/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 14/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 15/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 16/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 17/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 18/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 19/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 20/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 21/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 22/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 23/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 24/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 25/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 26/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 27/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 28/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 29/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 30/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 31/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 32/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 33/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 34/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 35/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 36/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 37/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 38/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 39/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 40/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 41/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 42/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 43/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 44/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 45/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 46/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 47/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 48/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 49/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 50/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 51/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 52/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 53/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 54/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 55/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 56/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 57/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 58/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 59/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 60/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 61/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 62/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Channel 63/64 : 0
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1 [32] -1/-1/-1->0->-1 [33] -1/-1/-1->0->-1 [34] -1/-1/-1->0->-1 [35] -1/-1/-1->0->-1 [36] -1/-1/-1->0->-1 [37] -1/-1/-1->0->-1 [38] -1/-1/-1->0->-1 [39] -1/-1/-1->0->-1 [40] -1/-1/-1->0->-1 [41] -1/-1/-1->0->-1 [42] -1/-1/-1->0->-1 [43] -1/-1/-1->0->-1 [44] -1/-1/-1->0->-1 [45] -1/-1/-1->0->-1 [46] -1/
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO P2P Chunksize set to 524288
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Check P2P Type isAllDirectP2p 0 directMode 0
+10-249-32-141-cls-2jtp4whc:64390:70979 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 167
+10-249-32-141-cls-2jtp4whc:64390:70977 [0] NCCL INFO [Proxy Service] Device 0 CPU core 69
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO 64 coll channels, 64 collnet channels, 0 nvls channels, 64 p2p channels, 64 p2p channels per peer
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO CC Off, workFifoBytes 1048576
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v4 symbol.
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO ncclCommInitRankConfig comm 0xd191500 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId bb000 commId 0xf5bee1c166b6b530 - Init COMPLETE
+10-249-32-141-cls-2jtp4whc:64390:70935 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 1 total 0.95 (kernels 0.64, alloc 0.08, bootstrap 0.12, allgathers 0.00, topo 0.07, graphs 0.00, connections 0.04, rest 0.01)
+/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/work/mllm_datas/zhengliang/szl/project/video_compress/llava/train/train_mem.py", line 7, in <module>
+[rank0]:     train()
+[rank0]:   File "/home/work/mllm_datas/zhengliang/szl/project/video_compress/llava/train/train.py", line 1818, in train
+[rank0]:     model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+[rank0]:   File "/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/transformers/hf_argparser.py", line 354, in parse_args_into_dataclasses
+[rank0]:     raise ValueError(f"Some specified arguments are not used by the HfArgumentParser: {remaining_args}")
+[rank0]: ValueError: Some specified arguments are not used by the HfArgumentParser: ['--evaluation_strategy', 'no']
+[rank0]:[W407 15:15:20.564916062 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+10-249-32-141-cls-2jtp4whc:64390:73202 [0] NCCL INFO comm 0xd191500 rank 0 nranks 1 cudaDev 0 busId bb000 - Abort COMPLETE
+E0407 15:15:22.507000 64347 site-packages/torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 64390) of binary: /home/work/miniconda3/envs/video_compress/bin/python
+Traceback (most recent call last):
+  File "/home/work/miniconda3/envs/video_compress/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+  File "/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/distributed/run.py", line 936, in main
+    run(args)
+  File "/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/distributed/run.py", line 927, in run
+    elastic_launch(
+  File "/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+llava/train/train_mem.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-04-07_15:15:22
+  host      : bms-ytl-g16-v4-app-10-249-32-141
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 64390)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

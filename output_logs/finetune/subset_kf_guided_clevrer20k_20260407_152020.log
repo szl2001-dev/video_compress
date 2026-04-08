@@ -1,0 +1,166 @@
+Failed to import llava_qwen from llava.language_model.llava_qwen. Error: No module named 'llava.model.language_model.llava_qwen'
+[15:20:30.796210] Rank 0 | Local Rank 0 | World Size 1 | Local World Size 1 |
+10-249-32-141-cls-2jtp4whc:65195:65195 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond0
+10-249-32-141-cls-2jtp4whc:65195:65195 [0] NCCL INFO Bootstrap: Using bond0:10.249.32.141<0>
+10-249-32-141-cls-2jtp4whc:65195:65195 [0] NCCL INFO cudaDriverVersion 12040
+10-249-32-141-cls-2jtp4whc:65195:65195 [0] NCCL INFO NCCL version 2.27.5+cuda12.9
+10-249-32-141-cls-2jtp4whc:65195:65195 [0] NCCL INFO Comm config Blocking set to 1
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO NET/Plugin: Plugin name set by env to libnccl-net.so
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v10 symbol.
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v9 symbol.
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO NET/Plugin: Loaded net plugin NCCL RDMA Plugin v8 (v8)
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v10 symbol.
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v9 symbol.
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO NET/Plugin: Loaded collnet plugin SHARP (v8)
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Successfully loaded external plugin libnccl-net.so
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO P2P plugin IBext_v8
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/RoCE [1]mlx5_1:1/RoCE [2]mlx5_4:1/RoCE [3]mlx5_5:1/RoCE [RO]; OOB bond0:10.249.32.141<0>
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Initialized NET plugin NCCL RDMA Plugin v8
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Assigned NET plugin NCCL RDMA Plugin v8 to comm
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Using network NCCL RDMA Plugin v8
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO ncclCommInitRankConfig comm 0xd2fa6a0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId bb000 commId 0x3c0810ea039b96a3 - Init START
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO NCCL_HOSTID set by environment to 10.249.32.141
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Bootstrap timings total 0.068767 (create 0.000038, send 0.000198, recv 0.000247, ring 0.000002, delay 0.000001)
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO MNNVL busId 0xbb000 fabric UUID 0.0 cliqueId 0x0 state 3 healthMask 0x0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Setting affinity for GPU 0 to 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85,87,89,91,93,95,97,99,101,103,105,107,109,111,113,115,117,119,121,123,125,127,129,131,133,135,137,139,141,143,145,147,149,151,153,15
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO comm 0xd2fa6a0 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 00/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 01/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 02/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 03/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 04/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 05/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 06/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 07/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 08/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 09/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 10/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 11/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 12/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 13/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 14/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 15/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 16/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 17/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 18/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 19/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 20/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 21/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 22/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 23/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 24/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 25/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 26/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 27/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 28/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 29/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 30/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 31/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 32/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 33/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 34/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 35/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 36/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 37/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 38/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 39/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 40/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 41/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 42/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 43/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 44/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 45/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 46/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 47/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 48/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 49/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 50/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 51/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 52/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 53/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 54/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 55/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 56/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 57/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 58/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 59/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 60/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 61/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 62/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Channel 63/64 : 0
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1 [32] -1/-1/-1->0->-1 [33] -1/-1/-1->0->-1 [34] -1/-1/-1->0->-1 [35] -1/-1/-1->0->-1 [36] -1/-1/-1->0->-1 [37] -1/-1/-1->0->-1 [38] -1/-1/-1->0->-1 [39] -1/-1/-1->0->-1 [40] -1/-1/-1->0->-1 [41] -1/-1/-1->0->-1 [42] -1/-1/-1->0->-1 [43] -1/-1/-1->0->-1 [44] -1/-1/-1->0->-1 [45] -1/-1/-1->0->-1 [46] -1/
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO P2P Chunksize set to 524288
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Check P2P Type isAllDirectP2p 0 directMode 0
+10-249-32-141-cls-2jtp4whc:65195:80635 [0] NCCL INFO [Proxy Service] Device 0 CPU core 53
+10-249-32-141-cls-2jtp4whc:65195:80636 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 85
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO 64 coll channels, 64 collnet channels, 0 nvls channels, 64 p2p channels, 64 p2p channels per peer
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO CC Off, workFifoBytes 1048576
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v4 symbol.
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO ncclCommInitRankConfig comm 0xd2fa6a0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId bb000 commId 0x3c0810ea039b96a3 - Init COMPLETE
+10-249-32-141-cls-2jtp4whc:65195:76733 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 1 total 0.61 (kernels 0.28, alloc 0.17, bootstrap 0.07, allgathers 0.00, topo 0.07, graphs 0.00, connections 0.02, rest 0.00)
+/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+[15:20:31.664168] Rank 0:  Inspecting experiment hyperparameters:
+
+[15:20:31.664319] Rank 0:  model_args = {'model_name_or_path': './checkpoints/stage2-kf_guided-init', 'model_class_name': None, 'mm_tunable_parts': 'mm_mlp_adapter', 'version': 'qwen_2', 'freeze_backbone': False, 'tune_mm_mlp_adapter': False, 'tune_mm_vision_resampler': False, 'vision_tower': 'umt-large', 'vision_tower_pretrained': None, 'vision_encode_type': 'video_image', 'unfreeze_mm_vision_tower': False, 'unfreeze_language_model': False, 'mm_vision_select_layer': -2, 'pretrain_mm_mlp_adapter': None, 'mm_projector_type': 'kf_guided_mlp', 'mm_use_im_start_end': False, 'mm_use_im_patch_token': False, 'mm_patch_merge_type': 'spatial_nopad', 'mm_vision_select_feature': 'patch', 'mm_resampler_type': None, 'mm_mask_drop_mode': 'fixed', 'mm_mask_drop_skip_percentage': 0.0, 'mm_mask_drop_ratio': 0.25, 'mm_mask_drop_ratio_upper': None, 'mm_mask_drop_ratio_lower': None, 'mm_spatial_pool_stride': None, 'mm_spatial_pool_mode': 'bilinear', 'mm_spatial_pool_out_channels': None, 'mm_num_compress_latents': 128, 'mm_num_compress_query_type': 'learnable', 'mm_pos_num_frames': 8, 'mm_close_init': False, 'min_slow_num_frames': 4, 'mm_perceiver_depth': 3, 'mm_perceiver_latents': 32, 'mm_perceiver_ff_mult': 4, 'mm_perceiver_pretrained': None, 'mm_qformer_depth': 3, 'mm_qformer_latents': 32, 'mm_qformer_pretrained': None, 'rope_scaling_factor': None, 'rope_scaling_type': None, 's2': False, 's2_scales': '336,672,1008', 'use_pos_skipping': False, 'pos_skipping_range': 4096, 'mm_newline_position': 'nothing', 'mm_local_num_frames': 4, 'mm_llm_compress': False, 'llm_compress_type': 'attention', 'llm_compress_layer_list': '8,16,24', 'llm_image_token_ratio_list': '1.0,0.5,0.25,0.125'}
+
+
+[15:20:31.664390] Rank 0:  data_args = {'data_path': 'data/clevrer_qa_20k.yaml', 'lazy_preprocess': True, 'is_multimodal': False, 'early_mix_text': False, 'image_aspect_ratio': 'anyres_nopad', 'image_grid_pinpoints': '(1x1),...,(6x6)', 'image_crop_resolution': None, 'image_split_resolution': None, 'frame_aspect_ratio': 'square', 'frame_grid_pinpoints': None, 'max_num_pixels': 14745600000, 'frames_upbound': 16, 'frames_lowbound': 4, 'time_msg': 'short', 'local_num_frames': 4, 'sample_type': 'dynamic_fps1'}
+
+
+[15:20:31.664569] Rank 0:  training_args = {'output_dir': './checkpoints/finetune/subset_kf_guided_clevrer20k_20260407_152020', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': False, 'do_predict': False, 'eval_strategy': <IntervalStrategy.NO: 'no'>, 'prediction_loss_only': False, 'per_device_train_batch_size': 1, 'per_device_eval_batch_size': 4, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 8, 'eval_accumulation_steps': None, 'eval_delay': 0, 'torch_empty_cache_steps': None, 'learning_rate': 2e-05, 'weight_decay': 0.0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 1.0, 'max_steps': -1, 'lr_scheduler_type': <SchedulerType.COSINE: 'cosine'>, 'lr_scheduler_kwargs': {}, 'warmup_ratio': 0.03, 'warmup_steps': 0, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': './checkpoints/finetune/subset_kf_guided_clevrer20k_20260407_152020/runs/Apr07_15-20-30_10-249-32-141-cls-2jtp4whc.shopeemobile.com', 'logging_strategy': <IntervalStrategy.STEPS: 'steps'>, 'logging_first_step': False, 'logging_steps': 10, 'logging_nan_inf_filter': True, 'save_strategy': <SaveStrategy.STEPS: 'steps'>, 'save_steps': 200, 'save_total_limit': 2, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'restore_callback_states_from_checkpoint': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'bf16': True, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': True, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': True, 'eval_steps': None, 'dataloader_num_workers': 4, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': 'subset_kf_guided_clevrer20k_20260407_152020', 'disable_tqdm': False, 'remove_unused_columns': False, 'label_names': None, 'load_best_model_at_end': False, 'metric_for_best_model': None, 'greater_is_better': None, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': AcceleratorConfig(split_batches=False, dispatch_batches=None, even_batches=True, use_seedable_sampler=True, non_blocking=False, gradient_accumulation_kwargs=None, use_configured_state=False), 'parallelism_config': None, 'deepspeed': 'scripts/zero2.json', 'label_smoothing_factor': 0.0, 'optim': <OptimizerNames.ADAMW_TORCH: 'adamw_torch'>, 'optim_args': None, 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': ['wandb'], 'project': 'huggingface', 'trackio_space_id': 'trackio', 'ddp_find_unused_parameters': None, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': <HubStrategy.EVERY_SAVE: 'every_save'>, 'hub_token': None, 'hub_private_repo': None, 'hub_always_push': False, 'hub_revision': None, 'gradient_checkpointing': True, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'include_for_metrics': [], 'eval_do_concat_batches': True, 'fp16_backend': 'auto', 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': None, 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': False, 'torch_compile_backend': None, 'torch_compile_mode': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': 'no', 'neftune_noise_alpha': None, 'optim_target_modules': None, 'batch_eval_metrics': False, 'eval_on_start': False, 'use_liger_kernel': False, 'liger_kernel_config': None, 'eval_use_gather_object': False, 'average_tokens_across_devices': True, 'cache_dir': None, 'freeze_mm_mlp_adapter': False, 'freeze_mm_vision_resampler': False, 'mpt_attn_impl': 'triton', 'model_max_length': 8192, 'double_quant': True, 'quant_type': 'nf4', 'bits': 16, 'lora_enable': False, 'lora_r': 64, 'lora_alpha': 16, 'lora_dropout': 0.05, 'lora_weight_path': '', 'lora_bias': 'none', 'mm_projector_lr': None, 'mm_vision_tower_lr': None, 'group_by_varlen': False, 'group_by_modality_length': True, 'group_by_modality_length_auto': False, 'verbose_logging': True, 'attn_implementation': 'flash_attention_2', 'distributed_state': Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda:0
+, '_n_gpu': 1, '_setup_devices': device(type='cuda', index=0), 'deepspeed_plugin': DeepSpeedPlugin(hf_ds_config=<transformers.integrations.deepspeed.HfTrainerDeepSpeedConfig object at 0x7f069fc53fd0>, gradient_accumulation_steps=8, gradient_clipping=1.0, zero_stage=2, is_train_batch_min=True, offload_optimizer_device='none', offload_param_device='none', offload_optimizer_nvme_path='none', offload_param_nvme_path='none', zero3_init_flag=False, zero3_save_16bit_model=False, transformer_moe_cls_names=None, enable_msamp=False, msamp_opt_level='O1'), 'hf_deepspeed_config': <transformers.integrations.deepspeed.HfTrainerDeepSpeedConfig object at 0x7f069fc53fd0>}
+
+
+[15:20:31.668690] Rank 0:  Overwriting config with {'vision_encode_type': 'video_image', 'mm_num_compress_latents': 128, 'mm_num_compress_query_type': 'learnable', 'mm_pos_num_frames': 8, 'mm_local_num_frames': 4, 'mm_close_init': False, 'min_slow_num_frames': 4, 'mm_llm_compress': False, 'llm_compress_layer_list': [8, 16, 24], 'llm_image_token_ratio_list': [1.0, 0.5, 0.25, 0.125], 'llm_compress_type': 'attention', 'mm_projector_type': 'kf_guided_mlp', 'mm_patch_merge_type': 'spatial_nopad', 'mm_newline_position': 'nothing', 'use_pos_skipping': False, 'pos_skipping_range': 4096, 'mm_spatial_pool_mode': 'bilinear'}
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/work/mllm_datas/zhengliang/szl/project/video_compress/llava/train/train_mem.py", line 7, in <module>
+[rank0]:     train()
+[rank0]:   File "/home/work/mllm_datas/zhengliang/szl/project/video_compress/llava/train/train.py", line 1867, in train
+[rank0]:     model = get_model(model_args, training_args, bnb_model_from_pretrained_args)
+[rank0]:   File "/home/work/mllm_datas/zhengliang/szl/project/video_compress/llava/train/train.py", line 1808, in get_model
+[rank0]:     raise ValueError(f"Unknown model class {model_args}")
+[rank0]: ValueError: Unknown model class ModelArguments(model_name_or_path='./checkpoints/stage2-kf_guided-init', model_class_name=None, mm_tunable_parts='mm_mlp_adapter', version='qwen_2', freeze_backbone=False, tune_mm_mlp_adapter=False, tune_mm_vision_resampler=False, vision_tower='umt-large', vision_tower_pretrained=None, vision_encode_type='video_image', unfreeze_mm_vision_tower=False, unfreeze_language_model=False, mm_vision_select_layer=-2, pretrain_mm_mlp_adapter=None, mm_projector_type='kf_guided_mlp', mm_use_im_start_end=False, mm_use_im_patch_token=False, mm_patch_merge_type='spatial_nopad', mm_vision_select_feature='patch', mm_resampler_type=None, mm_mask_drop_mode='fixed', mm_mask_drop_skip_percentage=0.0, mm_mask_drop_ratio=0.25, mm_mask_drop_ratio_upper=None, mm_mask_drop_ratio_lower=None, mm_spatial_pool_stride=None, mm_spatial_pool_mode='bilinear', mm_spatial_pool_out_channels=None, mm_num_compress_latents=128, mm_num_compress_query_type='learnable', mm_pos_num_frames=8, mm_close_init=False, min_slow_num_frames=4, mm_perceiver_depth=3, mm_perceiver_latents=32, mm_perceiver_ff_mult=4, mm_perceiver_pretrained=None, mm_qformer_depth=3, mm_qformer_latents=32, mm_qformer_pretrained=None, rope_scaling_factor=None, rope_scaling_type=None, s2=False, s2_scales='336,672,1008', use_pos_skipping=False, pos_skipping_range=4096, mm_newline_position='nothing', mm_local_num_frames=4, mm_llm_compress=False, llm_compress_type='attention', llm_compress_layer_list='8,16,24', llm_image_token_ratio_list='1.0,0.5,0.25,0.125')
+[rank0]:[W407 15:20:32.998337638 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+10-249-32-141-cls-2jtp4whc:65195:82270 [0] NCCL INFO comm 0xd2fa6a0 rank 0 nranks 1 cudaDev 0 busId bb000 - Abort COMPLETE
+E0407 15:20:34.084000 65082 site-packages/torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 65195) of binary: /home/work/miniconda3/envs/video_compress/bin/python
+Traceback (most recent call last):
+  File "/home/work/miniconda3/envs/video_compress/bin/torchrun", line 7, in <module>
+    sys.exit(main())
+  File "/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+  File "/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/distributed/run.py", line 936, in main
+    run(args)
+  File "/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/distributed/run.py", line 927, in run
+    elastic_launch(
+  File "/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+llava/train/train_mem.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-04-07_15:20:34
+  host      : bms-ytl-g16-v4-app-10-249-32-141
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 65195)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

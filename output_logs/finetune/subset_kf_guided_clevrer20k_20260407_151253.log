@@ -1,0 +1,9 @@
+Failed to import llava_qwen from llava.language_model.llava_qwen. Error: No module named 'llava.model.language_model.llava_qwen'
+Traceback (most recent call last):
+  File "/home/work/mllm_datas/zhengliang/szl/project/video_compress/llava/train/train_mem.py", line 6, in <module>
+    init_distributed_mode()
+  File "/home/work/mllm_datas/zhengliang/szl/project/video_compress/llava/dist_utils.py", line 86, in init_distributed_mode
+    f"Rank {os.environ['RANK']} | Local Rank {os.environ['LOCAL_RANK']} | "
+  File "/home/work/miniconda3/envs/video_compress/lib/python3.10/os.py", line 680, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'LOCAL_RANK'

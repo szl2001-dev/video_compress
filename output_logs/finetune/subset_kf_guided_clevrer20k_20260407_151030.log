@@ -1,0 +1,9 @@
+Failed to import llava_qwen from llava.language_model.llava_qwen. Error: No module named 'llava.model.language_model.llava_qwen'
+Traceback (most recent call last):
+  File "/home/work/mllm_datas/zhengliang/szl/project/video_compress/llava/train/train_mem.py", line 1, in <module>
+    from llava.train.train import train
+  File "/home/work/mllm_datas/zhengliang/szl/project/video_compress/llava/train/train.py", line 45, in <module>
+    from llava.train.llava_trainer import LLaVATrainer
+  File "/home/work/mllm_datas/zhengliang/szl/project/video_compress/llava/train/llava_trainer.py", line 11, in <module>
+    from transformers.trainer import is_sagemaker_mp_enabled, get_parameter_names, has_length, logger, is_accelerate_available, is_datasets_available, GradientAccumulationPlugin
+ImportError: cannot import name 'GradientAccumulationPlugin' from 'transformers.trainer' (/home/work/miniconda3/envs/video_compress/lib/python3.10/site-packages/transformers/trainer.py)

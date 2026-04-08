@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(/home/work/miniconda3/envs/videochat/bin/python:*)",
+      "Bash(ls /home/work/mllm_datas/zhengliang/szl/project/video_compress/mvbench_video/*.py)",
+      "Bash(ls /home/work/mllm_datas/zhengliang/szl/project/video_compress/mvbench_video/*.json)",
+      "Bash(conda run:*)",
+      "Bash(/home/work/miniconda3/envs/video_compress/bin/pip install:*)",
+      "Bash(/home/work/miniconda3/envs/video_compress/bin/python -c ':*)",
+      "Bash(/home/work/miniconda3/envs/video_compress/bin/python:*)",
+      "Bash(xargs -I{} echo \"llava-video sample: {}\")",
+      "Bash(bash:*)",
+      "Bash(grep -v \"^$\")"
+    ]
+  }
+}
